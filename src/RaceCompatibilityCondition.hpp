@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include "toml.hpp"
+#include <toml++/toml.hpp>
 #include "xbyak/xbyak.h"
 
 #include <print>

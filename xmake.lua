@@ -26,11 +26,13 @@ set_config("skyrim_vr", true)
 set_config("skyrim_ae", true)
 set_config("skyrim_se", true)
 set_config("skse_xbyak", true)
+add_requires("toml++")
 
 -- targets
 target("RaceCompatibilityCondition")
     -- add dependencies to target
     add_deps("commonlibsse-ng")
+    add_packages("toml++")
 
     -- add commonlibsse-ng plugin
     add_rules("commonlibsse-ng.plugin", {
